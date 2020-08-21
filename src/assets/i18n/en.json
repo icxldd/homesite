@@ -1,0 +1,69 @@
+{
+    "nav": {
+        "Home": "HOME",
+        "About-Us": "ABOUT",
+        "Product-Service": "PRODUCT",
+        "Techs": "TECHNOLOGY",
+        "TechnicalSupport": "TECHNICAL SUPPORT",
+        "News": "NEWS",
+        "Contact-Us": "CONTACT US"
+    },
+    "common": {
+        "Name": "Name",
+        "Phone": "Phone",
+        "Content": "Content",
+        "EMail": "EMail",
+        "Address": "ADD",
+        "Confirm": "Confirm",
+        "Clear": "Clear"
+    },
+    "page": {
+        "about": {
+            "about-us-title": "About Us",
+            "about-us-content-1": "Shanghai Bamboo Info-Tech Co., Ltd. is a new company focusing on the development of technologies in the virtual reality (VR) and augmented Reality (AR) fields. Its team members are veterans in programming and project developing. ",
+            "about-us-content-2": "The proposition of Bamboo is to “Prevail the beauty of Virtual Reality”, and to provide total solutions to its clients.",
+            "about-us-content-3": " Bamboo’s custom solutions provide clients with better consumer experience by enhanced interaction with their customers and seamless connection between online and offline scenarios.",
+            "about-us-content-4": "The Vision of company is to improve the social productivity by revolutionizing the communication mode with VR and AR technologies. ",
+            "our-team-title": "Our Team",
+            "company-chronicle": "Company Chronicle",
+            "set-up-of-company": "Set-up of Company"
+        },
+        "product": {
+            "chartlet-title-1": "Morejee Design Software",
+            "chartlet-sub-title-1": "Products",
+            "chartlet-description-1": "Full three-dimensional (3D) interior design software.Real-time rendering of high quality pictures.Intuitive interface, simple and easy to use.Cloud database management system.Supporting multiple devices, and connecting software, website, and mobile APPs.",
+            "chartlet-title-2": "Virtual Model House",
+            "chartlet-sub-title-2": "Services",
+            "chartlet-description-2": "3D immersive space walkthrough.Supporting VR headsets, touch-screen, and other interaction devices.",
+            "chartlet-title-3": "Custom Software Development",
+            "chartlet-sub-title-3": "Services",
+            "chartlet-description-3": "Tailor-made software by listening carefully to clients’ requests.Integrating demonstration, design, sales, order process, and management functions.Delievering high quality dynamic pictures by advanced real-time rendering engine."
+        },
+        "news": {
+            "title-1": "CIFF Shanghai",
+            "content-1": "Bamboo is invited by our partner to participate the 2018 CIFF shanghai Exhibition from 10th till 13th of September. The booth is located at the N-A02 in NECCSH. We will present the most advanced custom software for modular hard-outfit industry. Our software connects the demonstration, design, quotation, order process, and management functions, and provide high efficiency and accuracy in communication with consumers. Modular hard-outfit industry is the rising segment of home-décor business, and our software supports further development of it."
+        },
+        "contact-us": {
+            "address": "Rm. 1405, SAIC Building South Tower, No. 222, Caoxi Rd., Xuhui Dist., Shanghai China 200030"
+        },
+        "tech": {
+            "vr": "VR",
+            "vr-des": "Virtual Reality (VR): Virtual Reality is an interactive computer-generated experience taking place within a simulated environment, that incorporates mainly auditory and visual, but also other types of sensory feedback like haptic. This immersive environment can be similar to the real world or it can be fantastical, creating an experience that is not possible in ordinary physical reality. Augmented reality systems may also be considered a form of VR that layers virtual information over a live camera feed into a headset or through a smartphone or tablet device giving the user the ability to view three-dimensional images.",
+            "ar": "AR",
+            "ar-des": "Augmented Reality (AR): Augmented reality system is an interaction technology that layers virtual information over a live camera feed into a headset or through a smartphone or tablet device giving the user the ability to view three-dimensional images. It’s now viewed as one of key technologies for Industiral 4.0.",
+            "laser-scanner": "Laser Scanner",
+            "laser-scanner-des": "Hand-held laser scanners create a 3D image through the triangulation mechanism described above: a laser dot or line is projected onto an object from a hand-held device and a sensor measures the distance to the surface. Data is collected in relation to an internal coordinate system and therefore to collect data where the scanner is in motion the position of the scanner must be determined. The position can be determined by the scanner using reference features on the surface being scanned (typically adhesive reflective tabs, but natural features have been also used in research work) or by using an external tracking method. Data is collected by a computer and recorded as data points within three-dimensional space, with processing this can be converted into a triangulated mesh and then a computer-aided design model.",
+            "structured-light-scanner": "Structured Light Scanner",
+            "structured-light-scanner-des": "Structured light scanners use the projection of light of patterns consisting of many stripes at once, or of arbitrary fringes onto a three-dimensionally shaped surface produces an array of illumination that appears distorted from other perspectives than that of the projector, and can be used for geometric reconstruction of the surface shape. Seen from different viewpoints, the pattern appears geometrically distorted due to the surface shape of the object.Although many other variants of structured light projection are possible, patterns of parallel stripes are widely used. The picture shows the geometrical deformation of a single stripe projected onto a simple 3D surface. The displacement of the stripes allows for an exact retrieval of the 3D coordinates of any details on the object's surface.",
+            "3D-models": "3D Models",
+            "3D-models-des": "3D modeling (or three-dimensional modeling) is the process of developing a mathematical representation of any surface of an object (either inanimate or living) in three dimensions via specialized software. The product is called a 3D model. It can be displayed as a two-dimensional image through a process called 3D rendering or used in a computer simulation of physical phenomena. The model can also be physically created using 3D printing devices.",
+            "3D-model-building": "3D Model Building",
+            "3D-model-building-des": "There are different 3D model building methods in the interior design and furniture industries. Manual model building is the most traditional and widely used technics where trained technicians manually build 3D model of an object in 3D software by taking the pictures or other information of the object as reference. It the easiest and sometimes cost-effective way to build a 3D model.Besides manual method, a more advanced accurate way to build 3D model is by 3D scanning. The spatial information gathered by 3D scanners is a better source for building models, becasue 3D scanning provide pricise and detailed information, with which the technicians can build higher quality 3D models. Compared to manual method, realness is the key difference.In Bamboo, we use 3D scanning for model building, and that’s why our models are outstandingly real! "
+        }
+    },
+    "message": {
+        "incompleted": "Please fill in this form completely by type",
+        "error-phone": "Wrong phone number filling",
+        "message-send": "Message submit successfully"
+    }
+}

@@ -1,0 +1,110 @@
+:host {
+    display: block;
+    width: 100%;
+    height: 0;
+    div.nav {
+        img.nav-op-button {
+            display: inline-block;
+            position: fixed;
+            top:1rem;
+            right:1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            z-index: 999;
+            
+        }
+        ul {
+            position: fixed;
+            list-style: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            padding: 1.5625rem 0;
+            background-color: white;
+            color: black;
+            top: 0;
+            z-index: 100;
+            transition: transform 180ms;
+            transform: translateY(-100%);
+            &.actived {
+                transform: translateY(0);
+            }
+            li {
+              text-align: center;
+              outline:none;
+              height:3.125rem;
+              line-height: 3.125rem;
+              &.actived{
+                  &::after{
+                    transform: scale(1);
+                  }
+              }
+              &:hover{
+                  cursor: pointer;
+                  &::after{
+                      transform:scale(1);
+                  }
+              }
+              &::after{
+                  content:"";
+                  display: block;
+                  width:75%;
+                  height: .0625rem;
+                  margin: 0 auto;
+                  background-color: black;
+                  transform: scale(0);
+                  transition: transform 0.2s ease-in-out;
+              }
+            }
+        }
+    }
+    @media screen and (min-width: 600px) {
+        div.nav {
+            img.nav-op-button {
+                display: none;
+            }
+            ul {
+               display: inline-block;
+               width:auto;
+               top: 2rem;
+               right:1.25rem;
+               left:auto;
+               bottom:auto;
+               transform:translate(0,0);
+               padding: 0;
+               background-color: transparent;
+               color: white;
+                li {
+                   float: left;
+                   outline: none;
+                   margin-left: 1.25rem;
+                   height: 2.5rem;
+                   line-height: 2.5rem;
+                    &.actived {
+                        &::after {
+                            transform: scale(1);
+                        }
+                    }
+                    
+                    &:hover {
+                        cursor: pointer;
+                        &::after {
+                            transform: scale(1);
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: .0625rem;
+                        transform: scale(0);
+                        background-color: white;
+                        transition: transform 180ms;
+                    }
+                }
+            }
+        }
+    }
+}

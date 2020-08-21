@@ -1,0 +1,13 @@
+<div class="nav">
+  <!-- <img src="assets/images/logo.png" class="logo" routerLink="/home"> -->
+  <img [src]='showSmallNav?"assets/images/close.svg":"assets/images/menu.svg"' class="nav-op-button" (click)='toggleNav()'>
+  <ul [class.actived]='showSmallNav'>
+    <li routerLink="/home" (click)='toggleNav()' [class.actived]='homeActived'>{{'nav.Home'|translate}}</li>
+    <li routerLink="/about" (click)='toggleNav()' [class.actived]='aboutActived'>{{'nav.About-Us'|translate}}</li>
+    <li routerLink="/product" (click)='toggleNav()' [class.actived]='productActived'>{{'nav.Product-Service'|translate}}</li>
+    <li routerLink="/technology" (click)='toggleNav()' [class.actived]='technologyActived'>{{'nav.Techs'|translate}}</li>
+    <li routerLink="/technical-support" (click)='toggleNav()' [class.actived]='technicalSupportActived'>{{'nav.TechnicalSupport'|translate}}</li>
+    <li routerLink="/news" (click)='toggleNav()' [class.actived]='newsActived'>{{'nav.News'|translate}}</li>
+    <li routerLink="/contact-us" (click)='toggleNav()' [class.actived]='contactusActived'>{{'nav.Contact-Us'|translate}}</li>
+  </ul>
+</div>
