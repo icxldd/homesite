@@ -1,0 +1,11 @@
+<div>
+  <input width="200" [(ngModel)]="update" (keyup)="onkeyup();"/>
+  <p>
+    {{update}}
+  </p>
+  <p>
+    {{_outval}}
+  </p>
+
+  <app-chilrd [val] = '999' (updateVal)="onupdateVal($event)" #child></app-chilrd>
+</div>

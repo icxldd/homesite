@@ -12,8 +12,13 @@ import { TestComponent } from '../common/test/test.component';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { createTranslateHttpLoader } from '../app.module';
 import { HttpClient } from '@angular/common/http';
+import { TestangularComponent } from './components/testangular/testangular.component';
+import { ChilrdComponent } from '../common/chilrd/chilrd.component';
+
+
+
 @NgModule({
-    declarations: [IcxlComponent,LoginComponent, HomeComponent, DycToolComponent,NavComponent,TestComponent],
+    declarations: [TestangularComponent,IcxlComponent,LoginComponent, HomeComponent, DycToolComponent,NavComponent,TestComponent,ChilrdComponent],
     imports: [
         CommonModule,
         FormsModule,

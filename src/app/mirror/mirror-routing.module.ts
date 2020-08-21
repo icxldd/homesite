@@ -4,12 +4,17 @@ import { DycToolComponent } from './components/dyc-tool/dyc-tool.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { IcxlComponent } from './components/icxl/icxl.component';
+import { TestangularComponent } from './components/testangular/testangular.component';
 
 
 const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent
+    },
+    {
+        path: 'testangular',
+        component: TestangularComponent
     },
     {
         path: 'icxl',
