@@ -1,0 +1,334 @@
+:host{
+
+    $logocolor:#002140;
+    $onecolor:#001529;
+    $twocolor:#000c17;
+    .context{
+        width: 100%;
+        height: 100%;
+    }
+    .rightui{
+        position: fixed;
+        right: 0px;
+        width: 300px;
+        height: 100vh;
+        z-index: 99999;
+        background-color: #fff;
+        transition: transform 180ms; 
+
+
+        .rightuibox a{
+            margin-left: 22px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .hide{
+        transform: translateX(-1000000%);
+    }
+    .show{
+        transform: translateX(0);
+    }
+
+
+    .settinghide{
+        animation:hideam 180ms forwards;
+    }
+    .settingshow{
+        animation:showam 180ms forwards;
+    }
+    @keyframes showam
+    {
+    from {right: 0px;}
+    to {right: 300px;}
+    }
+
+    @keyframes hideam
+    {
+    from {right:  300px;}
+    to {right: 0px;}
+    }
+
+    .rightSetting{
+        width: 50px;
+        z-index: 99999;
+        height: 50px;
+        position: fixed;
+        right: 0px;
+        top: 40%;
+        
+        border-radius: 4px 0 0 4px;
+        background-color: #1890ff;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .leftbox{
+        overflow-y: auto;
+        position: fixed;
+        left: 0px;
+        width: 250px;
+        height: 100vh;
+        background-color: $logocolor;
+        z-index: 999;
+        .leftboxtop{
+            height: 4rem;
+            background-color: $onecolor;
+            font-size: 20px;
+            line-height: 60px;
+            text-align: center;
+        }
+        .leftbottom{
+            .leftbottomul{
+                list-style: none;
+            }
+            .leftbottomli{
+                text-align: left;
+                font-size: 17px;
+                min-height: 50px;
+                line-height: 50px;
+
+                &.act .leftbottomlidiv{
+                    display: block;
+                    transform: translateY(0);
+                }
+                .leftbottomlidiv{
+
+                    transition: transform 180ms; 
+                    transform: translateY(-10000%);
+                    display: none;
+
+
+
+                    position: relative;
+
+
+                    .leftbottomlidivul{
+                        list-style: none;
+                    }
+                    .leftbottomlidivli{
+                        height: 50px;
+                        line-height: 50px;
+                        background-color: $twocolor;
+                    }
+                }
+                a{
+                    position: relative;
+                    left: 20%;
+                    text-decoration: none;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                    // color: #fff;
+                }
+            }
+            
+        }
+    }
+    .top{
+        position: fixed;
+        top: 0px;
+        // width: calc(100%-250px);
+        width: calc(100% - 250px);
+        right: 0px;
+        box-shadow: 1px 1px 1px #e2e2e2;
+        height: 4rem;
+        z-index: 1;
+        background-color: #fff;
+    }
+    .routerui{
+        width: calc(100% - 250px);
+        height: calc(100% - 4rem);
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+
+    @media screen and (max-width: 600px){
+        .leftbox{
+            width: 150px;
+            .leftboxtop{
+                font-size: 12px;
+                line-height: 60px;
+            }
+        }
+        .top{
+            width: calc(100% - 150px);
+        }
+        .routerui{
+            width: calc(100% - 150px);
+        }
+
+        
+
+        
+    }
+
+
+
+
+
+
+
+    .topbox{
+
+
+    @media screen and (min-width: 1900px){
+        .topboxHeader{
+            padding-left: 20%;
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        .menusli{
+            font-size: 12px;
+            width: 80px !important;
+            margin-left: 10px !important;
+            // line-height: 65px;
+        }
+        .boxinfo{
+            font-size: 12px;
+            width: 80px !important;
+        }
+        .menus{
+            width: 50% !important;
+        }
+    }
+    .topboxHeader{
+        height: 64px;
+        width: 100%;
+        background-color:#001529 ;
+
+    }
+
+    .therMenus{
+        display: inline-flex;
+        position: relative;
+        bottom: 28px;
+        font-size: 30px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .menus{
+        display: inline-flex;
+        width: 70%;
+        padding-left: 5%;
+        font-size: 20px;
+        line-height: 65px;
+    }
+    .logotext{
+        display: inline-block;
+        position: relative;
+    bottom: 26px;
+    }
+    .menusul{
+    list-style: none;
+    }
+    .menusli{
+        float: left;
+        margin-left: 30px;
+        width: 150px;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+            color: #fff;
+            // opacity: 0.5;
+            background-color: #293b4b;
+        }
+    }
+    #topinfos{
+        .boxinfo{
+            .boxinfo:hover{
+                display: block;
+            }
+            background-color: #001529;
+            width: 150px;
+            padding-left: 20px;
+            display: none;
+            position: fixed;
+            .boxinfoul{
+                list-style: none;
+            }
+            .boxinfoli{
+                height: 50px;
+                line-height: 65px;
+                &:hover{
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+    #therInfos{
+        position: fixed;
+        display: none;
+        background-color: #001529;
+        width: 150px;
+        padding-left: 20px;
+            .boxinfoul{
+                list-style: none;
+              
+           
+            }
+            .boxinfoli{
+                height: 50px;
+                line-height: 65px;
+                &:hover{
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+    }
+
+    #therInfosChildInfo{
+        .boxinfo{
+            .boxinfo:hover{
+                display: block;
+            }
+            background-color: #001529;
+            width: 150px;
+            padding-left: 20px;
+            display: none;
+            
+            position: fixed;
+            .boxinfoul{
+                list-style: none;
+            }
+            .boxinfoli{
+            height: 50px;
+                line-height: 65px;
+                &:hover{
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.shadow{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:999;
+    background-color:#000;
+    opacity:0.6;
+    pointer-events: none;
+    
+}
+}

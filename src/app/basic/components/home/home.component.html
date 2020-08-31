@@ -1,0 +1,107 @@
+<div class="box" >
+<div [ngClass]="{'shadow': isShowRight}"></div>
+<div class="leftbox" [ngStyle]="{'display': isTopMenu?'none':'block'}">
+  <div class="leftboxtop">
+      <span>GUNS快速開發平臺</span>
+  </div>
+  <div class="leftbottom">
+    <ul class="leftbottomul">
+      <li class="leftbottomli" [class.act]="btn1" >
+        <a (click)="btn1=!btn1">主控面板</a>
+        <div class="leftbottomlidiv">
+            <ul class="leftbottomlidivul">
+              <li class="leftbottomlidivli"><a>分析台</a></li>
+              <li class="leftbottomlidivli"><a>控制台</a></li>
+            </ul>
+        </div>
+      </li>
+      <li class="leftbottomli" [class.act]="btn2"><a (click)="btn2=!btn2"> 组织架构</a>
+        <div class="leftbottomlidiv" >
+          <ul class="leftbottomlidivul">
+            <li class="leftbottomlidivli"><a>分析台</a></li>
+            <li class="leftbottomlidivli"><a>控制台</a></li>
+          </ul>
+      </div>
+      
+      </li>
+      <li class="leftbottomli" [class.act]="btn3"><a (click)="btn3=!btn3">权限管理</a>
+        <div class="leftbottomlidiv">
+          <ul class="leftbottomlidivul">
+            <li class="leftbottomlidivli"><a>分析台</a></li>
+            <li class="leftbottomlidivli"><a>控制台</a></li>
+          </ul>
+      </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="top">
+      <p>123213</p>
+  </div>
+</div>
+
+<div class="topbox" >
+    <div class="topboxHeader">
+      <div class="logotext">
+        <span>icxl</span>
+      </div>
+      <div class="menus">
+        <ul class="menusul">
+          <li *ngFor="let item of data" class="menusli" (mousemove)="onmousemove(item.parent.id,$event);" (mouseout)="onmouseout(item.parent.id,$event);">{{item.parent.name}}</li>
+        </ul>
+      </div>
+      <div class="therMenus" (mousemove)="onmousemove_ther_($event);">
+        <span>...</span>
+      </div>
+    </div>
+
+
+<div id="topinfos">
+  <div class="boxinfo" *ngFor="let item of data" [attr.data-id]="item.parent.id"  (mouseout)="onmouseout(item.parent.id,$event);">
+    <ul class="boxinfoul">
+      <li class="boxinfoli" *ngFor="let item_ of item.childs" >{{item_.name}}</li>
+    </ul>
+  </div>
+</div>
+
+
+<div id="therInfos" (mouseout)="onmouseout_ther_($event);">
+    <ul class="boxinfoul">
+      <li class="boxinfoli" *ngFor="let item_ of data" [attr.data-childid_2]="item_.parent.id" (mousemove)="onmousemove_ther(item_.parent.id,$event);">{{item_.parent.name}}</li>
+    </ul>
+</div>
+
+<div id="therInfosChildInfo">
+  <div class="boxinfo" *ngFor="let item of data" [attr.data-childid]="item.parent.id" (mouseout)="onmouseout_ther(item.parent.id,$event);">
+    <ul class="boxinfoul">
+      <li class="boxinfoli" *ngFor="let item_ of item.childs">{{item_.name}}</li>
+    </ul>
+  </div>
+</div>
+
+
+
+   
+</div>
+
+
+
+
+
+
+<div class="rightui" [ngClass]="{'show': isShowRight,'hide':!isShowRight}">
+<div class="rightuibox">
+  <a (click)="isTopMenu=true;">头部导航</a>
+  <a (click)="isTopMenu=false;">左侧导航</a>
+</div>
+</div>
+<!-- [ngStyle]="{'right': isShowRight ? '300px' : '0px'}" -->
+<div class="rightSetting" (click)="settingclick();" [ngClass]="{'settingshow': isShowRight,'settinghide':!isShowRight}">
+
+</div>
+
+<router-outlet name="context" class="context"></router-outlet>
+<!-- //this.router.navigate(['wfc',{ outlets: { leftsider: ['riverlist'] }}]); -->
+
+
+</div>

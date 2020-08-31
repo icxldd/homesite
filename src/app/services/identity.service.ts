@@ -13,6 +13,8 @@ export interface IIdentityToken {
 export class IdentityService {
 
     private uri: string = `${environment.APIServer}`;
+    private apiurl: string = `${environment.GateWayAPI}/basic/api`;
+    
     public constructor(
         private httpClient: HttpClient
     ) { }
@@ -28,6 +30,21 @@ export class IdentityService {
         body.set('password', account.password);
         return this.httpClient.post<IIdentityToken>(url, body);
     }
+    public register(account: { username: string; password: string }): Observable<any> {
+        let url: string = `${this.apiurl}/account`;
+        const body: FormData = new FormData();
+        body.set('Name', account.username);
+        body.set('PassWord', account.password);
+        let obj =  {'Name':account.username,'PassWord':account.password};
+        return this.httpClient.post<any>(url, obj);
+    }
+
+
+    public getMenus():Observable<any>{
+        let url: string = `${this.apiurl}/Menu`;
+        return this.httpClient.get<any>(url);
+    }
+
 
     public getProfile(): Observable<any> {
         return this.httpClient.get<any>(`${this.uri}/Identity/Profile`);

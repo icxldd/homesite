@@ -1,0 +1,24 @@
+<div class="box">
+  <div id="loginUI" [ngClass]="{'show': !ShowRegisterUI,'notshow':ShowRegisterUI}">
+    <div style="padding-left: 20%;">
+      <img src="http://e-edesign.net:9721/assets/images/logo/dmz-cloud.png" style="width: 120px;height: 80px;"/>
+    </div>
+    <span>账号：</span><input [(ngModel)]="loginName" /><br/>
+    <span>密码：</span><input [(ngModel)]="loginPassword"/><br/>
+    <div class="buttonAction">
+      <input type="button" value="登陆" (click)="clickHanld();"/><input type="button" value="注册" (click)="registerclickHanld();"/>
+    </div>
+  </div>
+
+
+  <div id="registerUI" [ngClass]="{'show': ShowRegisterUI,'notshow':!ShowRegisterUI}">
+    <div style="padding-left: 20%;">
+      <img src="http://e-edesign.net:9721/assets/images/logo/dmz-cloud.png" style="width: 120px;height: 80px;"/>
+    </div>
+    <span>账号：</span><input [(ngModel)]="loginName" /><br/>
+    <span>密码：</span><input [(ngModel)]="loginPassword"/><br/>
+    <div class="buttonAction">
+      <input type="button" value="注册" (click)="registClick_rg();"/><input type="button" value="登陆" (click)="clickHanld_rg();"/>
+    </div>
+  </div>
+</div>

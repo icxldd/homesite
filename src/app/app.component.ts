@@ -8,7 +8,7 @@ import * as fromService from './services';
 })
 export class AppComponent {
 
-    constructor( private identitySrv: fromService.IdentityService,public translateService: TranslateService) {
+    constructor(public translateService: TranslateService) {
         console.log('constructor');
     }
     private _lang: string;
@@ -32,10 +32,10 @@ export class AppComponent {
         /* --- set i18n end ---*/
 
         
-        this.identitySrv.login({username:'icxl',password:'123456'})
-        .subscribe(res => {
-            localStorage.setItem('access_token', res.access_token);
-        });
+        // this.identitySrv.login({username:'icxl',password:'123456'})
+        // .subscribe(res => {
+        //     localStorage.setItem('access_token', res.access_token);
+        // });
 
       }
 }

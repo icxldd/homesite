@@ -4,8 +4,8 @@
 
 export const environment = {
     production: false,
-    APIServer: 'http://192.168.0.105:5000',
-    GateWayAPI:'http://192.168.0.105:9703'
+    APIServer: 'http://192.168.0.102:5000',
+    GateWayAPI:'http://192.168.0.102:9703'
 };
 
 /*
